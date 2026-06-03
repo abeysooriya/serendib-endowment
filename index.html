@@ -356,7 +356,7 @@
     <a href="#what-is">The concept</a>
     <a href="#how-it-works">How it works</a>
     <a href="#projections">Projections</a>
-    <a href="#past-giving">Past giving</a>
+    <a href="#impact-calc">Impact</a><a href="#past-giving">Past giving</a>
     <a href="#faq">FAQ</a>
     <a href="#next-steps">Next steps</a>
   </div>
@@ -608,6 +608,92 @@
 </div>
 
 <!-- PAST GIVING -->
+<div id="impact-calc" class="section-wide">
+  <h2>What your contribution <span>actually does</span></h2>
+  <div class="gold-divider"></div>
+  <p>The numbers in the projections are AUD — precise and real, but abstract. Here is what those distributions mean on the ground in Sri Lanka, in the currency and the context that matters.</p>
+
+  <div style="background:var(--parchment);border:1px solid var(--border);border-radius:8px;padding:32px;margin-top:32px;">
+
+    <!-- Slider -->
+    <div style="margin-bottom:28px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+        <label style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;color:var(--forest);">I contribute</label>
+        <span style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:var(--heritage);" id="ic-contrib-val">A$1,000</span>
+      </div>
+      <input type="range" min="500" max="10000" step="500" value="2500" id="ic-slider"
+        style="width:100%;accent-color:var(--gold);" oninput="icUpdate()">
+      <div style="display:flex;justify-content:space-between;font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);margin-top:4px;">
+        <span>A$500</span><span>A$10,000</span>
+      </div>
+    </div>
+
+    <!-- 4 result cards -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px;">
+      <div style="background:white;border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;padding:16px 18px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--heritage);" id="ic-annual-aud">A$55 / year</div>
+        <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);margin-top:4px;">distributed to Sri Lanka annually, forever</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;padding:16px 18px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--heritage);" id="ic-annual-lkr">LKR 13,090 / year</div>
+        <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);margin-top:4px;">approximate local purchasing power</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:6px;padding:16px 18px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--heritage);" id="ic-total-25">A$1,375 total</div>
+        <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);margin-top:4px;">over 25 years — and still going</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:6px;padding:16px 18px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--heritage);" id="ic-lkr-25">LKR 327,250</div>
+        <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);margin-top:4px;">total purchasing power over 25 years</div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div style="border-top:1px solid var(--border);padding-top:22px;margin-bottom:18px;">
+      <div style="font-family:'DM Sans',sans-serif;font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dk);margin-bottom:16px;">In Sri Lanka, your annual distribution buys approximately</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+        <div style="background:var(--heritage);border-radius:6px;padding:20px 16px;text-align:center;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(212,168,83,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px;"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;color:var(--gold);" id="ic-bags">13</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:11px;color:rgba(212,168,83,0.6);margin-top:4px;line-height:1.5;">school bags<br><span style="opacity:0.7;">avg LKR 1,000</span></div>
+        </div>
+        <div style="background:var(--heritage);border-radius:6px;padding:20px 16px;text-align:center;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(212,168,83,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px;"><path d="M2 18l4-8h12l4 8H2z"/><path d="M6 10V8a6 6 0 0112 0v2"/></svg>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;color:var(--gold);" id="ic-shoes">5</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:11px;color:rgba(212,168,83,0.6);margin-top:4px;line-height:1.5;">pairs of school shoes<br><span style="opacity:0.7;">avg LKR 2,550</span></div>
+        </div>
+        <div style="background:var(--heritage);border-radius:6px;padding:20px 16px;text-align:center;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(212,168,83,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px;"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;color:var(--gold);" id="ic-books">44</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:11px;color:rgba(212,168,83,0.6);margin-top:4px;line-height:1.5;">activity &amp; colouring books<br><span style="opacity:0.7;">avg LKR 300</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);margin:0;line-height:1.7;">Based on local Sri Lankan retail prices. LKR figures use an approximate rate of 238 LKR per AUD. Actual purchasing power will vary with currency fluctuations.</p>
+  </div>
+</div>
+
+<script>
+function icUpdate() {
+  const LKR = 238, DIST = 0.055, BAG = 1000, SHOE = 2550, BOOK = 300;
+  const v = parseInt(document.getElementById('ic-slider').value);
+  const annAUD = Math.round(v * DIST);
+  const annLKR = Math.round(annAUD * LKR);
+  const t25 = annAUD * 25;
+  const fmt = n => n.toLocaleString();
+  document.getElementById('ic-contrib-val').textContent = 'A$' + fmt(v);
+  document.getElementById('ic-annual-aud').textContent = 'A$' + fmt(annAUD) + ' / year';
+  document.getElementById('ic-annual-lkr').textContent = 'LKR ' + fmt(annLKR) + ' / year';
+  document.getElementById('ic-total-25').textContent = 'A$' + fmt(t25) + ' total';
+  document.getElementById('ic-lkr-25').textContent = 'LKR ' + fmt(Math.round(t25 * LKR));
+  document.getElementById('ic-bags').textContent = Math.floor(annLKR / BAG);
+  document.getElementById('ic-shoes').textContent = Math.floor(annLKR / SHOE);
+  document.getElementById('ic-books').textContent = Math.floor(annLKR / BOOK);
+}
+icUpdate();
+</script>
+
 <div id="past-giving" class="dark-section">
   <div style="max-width:860px;margin:0 auto;">
     <h2>A track record of <span style="color:var(--gold-lt);font-style:italic;">direct giving</span></h2>
