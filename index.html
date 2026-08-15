@@ -62,7 +62,7 @@
       padding: 0 24px; min-height: 56px; box-shadow: 0 2px 12px rgba(0,0,0,0.35);
     }
     .nav-brand { display: flex; align-items: center; flex-shrink: 0; }
-    .nav-links { display: flex; gap: 2px; flex-wrap: nowrap; overflow: hidden; }
+    .nav-links { display: flex; gap: 2px; flex-wrap: nowrap; overflow: hidden; align-items: center; }
     .nav-links a {
       color: rgba(212,168,83,0.6); text-decoration: none;
       font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 400;
@@ -492,7 +492,7 @@
     <a href="#impact-calc">Impact</a>
     <a href="#faq">FAQ</a>
     <a href="#board">Board</a>
-    <a href="#contribute">Contribute</a>
+    <a href="#contribute" style="background:var(--gold);color:var(--heritage) !important;padding:5px 14px;border-radius:14px;font-weight:700;margin-left:6px;">Donate</a>
   </div>
   <button class="nav-toggle" onclick="toggleNav()" aria-label="Open menu">
     <span></span><span></span><span></span>
@@ -506,7 +506,7 @@
   <a href="#impact-calc"  onclick="closeNav()">Impact</a>
   <a href="#faq"          onclick="closeNav()">FAQ</a>
   <a href="#board"        onclick="closeNav()">Board</a>
-  <a href="#contribute"   onclick="closeNav()">Contribute</a>
+  <a href="#contribute"   onclick="closeNav()" style="color:var(--gold);font-weight:700;">Donate</a>
 </div>
 
 <!-- HERO / COVER -->
@@ -519,6 +519,9 @@
   <div class="hero-subtitle">A permanent endowment for Sri Lanka</div>
   <div class="hero-divider"></div>
   <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(17px,2vw,22px);font-weight:300;font-style:italic;color:rgba(255,255,255,0.7);line-height:1.75;max-width:580px;margin:0 auto 24px;position:relative;z-index:1;">Because every child deserves a good education. Every family deserves dignity. And the communities of Sri Lanka, underserved and resilient, deserve our commitment not just for today but for generations to come.</p>
+  <div style="position:relative;z-index:1;margin-top:8px;margin-bottom:10px;">
+    <a href="#contribute" style="display:inline-block;background:var(--gold);color:var(--heritage);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:14px 32px;border-radius:3px;text-decoration:none;">Donate &#8594;</a>
+  </div>
   <div class="hero-tagline">Give once. Give forever.</div>
   <div class="hero-stats">
     <div class="hero-stat"><span class="val">A$50k</span><span class="lbl">Seed corpus target</span></div>
