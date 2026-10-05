@@ -1,0 +1,174 @@
+/* Constitution document. Layout from the source document, tokens from the site. */
+.cdoc{
+  --ink:#0D2318; --paper:#FFFFFF; --accent:#8B5E2A; --surface:#EDE6D6;
+  --ink-2:#4C5C4C; --rule:#D8CEB8; --accent-tint:rgba(212,168,83,0.16);
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',Helvetica,Arial,sans-serif;
+  --measure:66ch; --gutter:3.6rem;
+}
+.cdoc 
+*{box-sizing:border-box}
+@media (prefers-reduced-motion:reduce){.cdoc{scroll-behavior:auto}}.cdoc-wrap{display:grid;grid-template-columns:16.5rem minmax(0,1fr);gap:4rem;
+  max-width:74rem;margin:0 auto;padding:0 0 2rem}.cdoc /* ---------------- masthead ---------------- */
+
+
+
+/* ---------------- contents rail ---------------- */
+.rail{position:sticky;top:5rem;align-self:start;height:calc(100vh - 7rem);
+  overflow-y:auto;padding:1.5rem 0;font:400 .82rem/1.35 var(--sans)}.cdoc .rail h2{font:600 .7rem/1 var(--sans);letter-spacing:.06em;color:var(--ink-2);
+  margin:0 0 1rem;text-transform:none}.cdoc .rail ol{list-style:none;margin:0;padding:0}.cdoc .rail li{margin:0 0 .1rem}.cdoc .rail a{display:grid;grid-template-columns:2.6rem 1fr;gap:.4rem;text-decoration:none;
+  color:var(--ink-2);padding:.4rem .6rem .4rem .5rem;border-radius:2px}.cdoc .rail a:hover{color:var(--ink);background:var(--surface)}.cdoc .rail a.on{color:var(--accent);background:var(--accent-tint)}.cdoc .r-num{font-variant-numeric:tabular-nums;color:#A7A99E}.cdoc .rail a.on .r-num, .cdoc .rail a:hover .r-num{color:currentColor}.cdoc /* ---------------- document ---------------- */
+.cdoc-main{min-width:0;padding-top:1.5rem}.cdoc .toc{margin:0 0 4rem;padding:0 0 2.5rem;border-bottom:1px solid var(--rule)}.cdoc .toc h2{font:600 .78rem/1 var(--sans);color:var(--ink-2);margin:0 0 1.4rem}.cdoc .toc ol{list-style:none;margin:0;padding:0;columns:2;column-gap:3rem}.cdoc .toc-part{font:600 .78rem/1.4 var(--sans);color:var(--ink);margin:1.4rem 0 .5rem;
+  break-after:avoid}.cdoc .toc-part:first-child{margin-top:0}.cdoc .toc-c a{display:grid;grid-template-columns:2.2rem 1fr;font:400 .87rem/1.5 var(--sans);
+  color:var(--ink-2);text-decoration:none;padding:.12rem 0}.cdoc .toc-c a:hover{color:var(--accent)}.cdoc .t-num{font-variant-numeric:tabular-nums;color:#A7A99E}.cdoc .toc-c a:hover .t-num{color:var(--accent)}.cdoc .part{margin:0 0 4.5rem}.cdoc .part-h{font:600 .78rem/1.4 var(--sans);color:var(--ink-2);margin:0 0 2.2rem;
+  padding-bottom:.7rem;border-bottom:1px solid var(--rule);
+  display:grid;grid-template-columns:var(--gutter) 1fr;align-items:baseline}.cdoc .part-range{font-variant-numeric:tabular-nums;color:#A7A99E;font-weight:400}.cdoc h3.clause, .cdoc h4.subclause{display:grid;grid-template-columns:var(--gutter) 1fr;
+  align-items:baseline;margin:2.6rem 0 .7rem;scroll-margin-top:5rem}.cdoc h4.subclause{margin:1.9rem 0 .5rem}.cdoc h3.clause .ttl{font:600 1.14rem/1.35 var(--serif);letter-spacing:-.005em}.cdoc h4.subclause .ttl{font:600 .96rem/1.4 var(--serif);color:var(--ink)}.cdoc .anchor{text-decoration:none}.cdoc .num{font:500 .82rem/1.6 var(--sans);color:var(--accent);font-variant-numeric:tabular-nums;
+  display:inline-block}.cdoc h4.subclause .num{color:var(--ink-2)}.cdoc .anchor:hover .num{text-decoration:underline;text-underline-offset:3px}.cdoc .anchor:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}.cdoc-main p{margin:0 0 1rem;max-width:var(--measure);padding-left:var(--gutter)}.cdoc-main p.defn{padding-left:calc(var(--gutter) + 1.2rem);text-indent:-1.2rem;margin-bottom:.6rem}.cdoc-main b{font-weight:600}.cdoc a.xref{color:inherit;text-decoration:underline;text-decoration-color:var(--rule);
+  text-underline-offset:2px;text-decoration-thickness:1px}.cdoc a.xref:hover{color:var(--accent);text-decoration-color:var(--accent)}.cdoc a.xref:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}.cdoc ol.lettered, .cdoc ol.roman{list-style:none;margin:0 0 1.1rem;padding:0;max-width:var(--measure)}.cdoc ol.lettered>li{display:grid;grid-template-columns:var(--gutter) 1fr;margin:0 0 .5rem}.cdoc ol.roman{margin:.55rem 0 .3rem;grid-column:2}.cdoc ol.roman>li{display:grid;grid-template-columns:2rem 1fr;margin:0 0 .45rem}.cdoc .mk{font:500 .82rem/1.62 var(--sans);color:var(--ink-2);font-variant-numeric:tabular-nums}.cdoc ol.lettered>li>.bd{min-width:0}
+
+/* ---------------- responsive ---------------- */
+@media (max-width:60rem){.cdoc{--gutter:2.6rem}.cdoc-wrap{grid-template-columns:1fr;gap:0;padding:0 1.3rem 5rem}.cdoc .rail{position:static;height:auto;overflow:visible;padding:1.6rem 0 0;
+    border-bottom:1px solid var(--rule)}.cdoc .rail ol{columns:2;column-gap:1.5rem}.cdoc .rail a{padding:.3rem .3rem .3rem 0}.cdoc .toc ol{columns:1}.cdoc-main{padding-top:2rem}
+}
+
+/* ---------------- print ---------------- */
+@media print{.cdoc{--accent:#000;--ink:#000;--ink-2:#333;--rule:#bbb}.cdoc .rail, .cdoc .foot{display:none}.cdoc-wrap{display:block;max-width:none;padding:0}.cdoc .part{break-inside:auto}.cdoc h3.clause, .cdoc h4.subclause{break-after:avoid}.cdoc a{color:#000;text-decoration:none}
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Type scale aligned to the rest of the site.
+   Site reference: h2 Cormorant 40/300, h3 Cormorant 21/400,
+   body DM Sans 16/400, labels DM Sans 10/600 uppercase gold-dark.
+   ───────────────────────────────────────────────────────────────── */
+
+/* Part headings were 12px sans, smaller than the body they introduce.
+   They are the document's section headings, so they take the site's h2. */
+.cdoc .part-h {
+  display: block;
+  font: 300 2rem/1.2 var(--serif);
+  color: #183A2C;
+  letter-spacing: 0.5px;
+  margin: 0 0 1.6rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid #D4A853;
+}
+.cdoc .part-range {
+  display: block;
+  font: 600 0.62rem/1 var(--sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+/* Clause titles match the site's h3 exactly. */
+.cdoc h3.clause .ttl {
+  font: 400 1.32rem/1.35 var(--serif);
+  color: #183A2C;
+  letter-spacing: 0;
+}
+/* Subclauses sit one step below, still in the display face. */
+.cdoc h4.subclause .ttl {
+  font: 500 1.06rem/1.4 var(--serif);
+  color: #183A2C;
+}
+.cdoc h3.clause { margin: 2.8rem 0 0.6rem; }
+.cdoc h4.subclause { margin: 2rem 0 0.45rem; }
+
+/* Contents headings: labels, matching .card-label on the rest of the site. */
+.cdoc .rail h2,
+.cdoc .toc h2 {
+  font: 600 0.62rem/1 var(--sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.cdoc .toc-part {
+  font: 600 0.72rem/1.4 var(--sans);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.cdoc .t-num, .cdoc .r-num { color: var(--accent); opacity: 0.75; }
+
+/* Body copy matches the site: 16px, 1.75 line height. */
+.cdoc-main p,
+.cdoc ol.lettered > li,
+.cdoc ol.roman > li { font-size: 1rem; line-height: 1.75; }
+.cdoc .toc-c a, .cdoc .rail a { font-size: 0.84rem; }
+
+/* ─────────────────────────────────────────────────────────────────
+   Contents rail as a distinct panel, so the document reads as the
+   scrolling area beside it.
+   ───────────────────────────────────────────────────────────────── */
+.cdoc-wrap { gap: 3rem; align-items: start; }
+
+.cdoc .rail {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 1.4rem 1.1rem 1.5rem;
+  height: auto;
+  max-height: calc(100vh - 7rem);
+}
+.cdoc .rail h2 {
+  margin: 0 0 1rem;
+  padding: 0 0 0.8rem 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.cdoc .rail a { border-radius: 3px; }
+.cdoc .rail a:hover { background: rgba(255,255,255,0.65); }
+.cdoc .rail a.on {
+  background: #FFFFFF;
+  color: #183A2C;
+  box-shadow: inset 2px 0 0 #D4A853;
+  font-weight: 500;
+}
+.cdoc .rail a.on .r-num { color: var(--accent); }
+
+/* Scrollbar inside the rail, kept quiet */
+.cdoc .rail { scrollbar-width: thin; scrollbar-color: var(--rule) transparent; }
+.cdoc .rail::-webkit-scrollbar { width: 6px; }
+.cdoc .rail::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+.cdoc .rail::-webkit-scrollbar-track { background: transparent; }
+
+/* A hairline between the panel and the document reinforces the split */
+.cdoc-main {
+  padding-left: 2.6rem;
+  border-left: 1px solid var(--rule);
+  padding-top: 0.4rem;
+}
+
+@media (max-width: 60rem) {
+  .cdoc .rail {
+    max-height: none;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+  }
+  .cdoc-main { padding-left: 0; border-left: none; }
+}
+
+/* Contents entries must never split across columns */
+.cdoc .rail li, .cdoc .toc-part, .cdoc .toc-c { break-inside: avoid; }
+
+/* Two columns need real width; below that, stack */
+@media (max-width: 34rem) {
+  .cdoc .rail ol { columns: 1; }
+  .cdoc .toc ol { columns: 1; }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Optical sizing. Cormorant has a much smaller x-height than DM Sans,
+   so nominal sizes mislead: Cormorant 17 and DM Sans 16 share an
+   8px x-height, which made subclause titles look smaller than the
+   body beneath them. Sized by measured x-height instead:
+     body      DM Sans   16 / 400  → x-height  8
+     subclause Cormorant 20 / 500  → x-height 10
+     clause    Cormorant 24 / 400  → x-height 11
+     part      Cormorant 32 / 300  → x-height 15
+   ───────────────────────────────────────────────────────────────── */
+.cdoc h3.clause .ttl { font: 400 1.5rem/1.3 var(--serif); }
+.cdoc h4.subclause .ttl { font: 500 1.25rem/1.35 var(--serif); }
+.cdoc h3.clause { margin: 3rem 0 0.7rem; }
+.cdoc h4.subclause { margin: 2.1rem 0 0.5rem; }
