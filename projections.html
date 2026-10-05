@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modelling the fund · The Serendib Endowment</title>
+<meta name="description" content="An illustrative model of how The Serendib Endowment's corpus and annual distributions could grow over time under stated assumptions.">
+<link rel="canonical" href="https://serendibendowment.org/projections.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://serendibendowment.org/projections.html">
+<meta property="og:title" content="Modelling the fund">
+<meta property="og:description" content="An illustrative model of how The Serendib Endowment's corpus and annual distributions could grow over time under stated assumptions.">
+<meta property="og:site_name" content="The Serendib Endowment">
+<meta property="og:image" content="https://serendibendowment.org/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Modelling the fund">
+<meta name="twitter:description" content="An illustrative model of how The Serendib Endowment's corpus and annual distributions could grow over time under stated assumptions.">
+<meta name="twitter:image" content="https://serendibendowment.org/assets/img/og-image.jpg">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="index.html" aria-label="The Serendib Endowment, home"><svg xmlns="http://www.w3.org/2000/svg" style="height:32px;width:auto;display:block;" viewBox="-13.58 -55.10 401.32 109.95" role="img" aria-label="The Serendib Endowment"><g transform="translate(0 -32) scale(1.5238095238095237) translate(-24 -30)"><path d="M50 62 C44.5 49.5 46 38.5 50 30.5 C54 38.5 55.5 49.5 50 62 Z" transform="rotate(0 50 62)" fill="rgba(212,168,83,0.10)" stroke="#D4A853" stroke-width="1.6" stroke-linejoin="round"></path><path d="M50 62 C44.5 49.5 46 38.5 50 30.5 C54 38.5 55.5 49.5 50 62 Z" transform="rotate(-26 50 62)" fill="rgba(212,168,83,0.10)" stroke="#D4A853" stroke-width="1.6" stroke-linejoin="round"></path><path d="M50 62 C44.5 49.5 46 38.5 50 30.5 C54 38.5 55.5 49.5 50 62 Z" transform="rotate(-52 50 62)" fill="rgba(212,168,83,0.10)" stroke="#D4A853" stroke-width="1.6" stroke-linejoin="round"></path><path d="M50 62 C44.5 49.5 46 38.5 50 30.5 C54 38.5 55.5 49.5 50 62 Z" transform="rotate(26 50 62)" fill="rgba(212,168,83,0.10)" stroke="#D4A853" stroke-width="1.6" stroke-linejoin="round"></path><path d="M50 62 C44.5 49.5 46 38.5 50 30.5 C54 38.5 55.5 49.5 50 62 Z" transform="rotate(52 50 62)" fill="rgba(212,168,83,0.10)" stroke="#D4A853" stroke-width="1.6" stroke-linejoin="round"></path><path d="M31 62 Q50 70 69 62" fill="none" stroke="#D4A853" stroke-width="1.6" stroke-linecap="round"></path><circle cx="50" cy="62" r="2.3" fill="#D4A853"></circle></g><line x1="106.12" y1="-41.04" x2="106.12" y2="41.04" stroke="rgba(212,168,83,0.40)" stroke-width="1"></line><g font-family="'Cormorant Garamond', Georgia, serif" font-weight="400" font-size="38" letter-spacing="0.045em" fill="#D4A853"><text x="133.00" y="-12.16">The Serendib</text><text x="133.00" y="31.92">Endowment</text></g></svg></a>
+  <div class="nav-links">
+    <a href="how-it-works.html">How it works</a>
+    <a href="what-we-fund.html">What we fund</a>
+    <a href="projections.html" aria-current="page">Modelling</a>
+    <a href="governance.html">Governance</a>
+    <a href="updates.html">Updates</a>
+    <a href="contact.html">Contact</a>
+    <a class="nav-cta" href="give.html">Give</a>
+  </div>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <a href="how-it-works.html" onclick="closeNav()">How it works</a>
+  <a href="what-we-fund.html" onclick="closeNav()">What we fund</a>
+  <a href="projections.html" aria-current="page" onclick="closeNav()">Modelling</a>
+  <a href="governance.html" onclick="closeNav()">Governance</a>
+  <a href="updates.html" onclick="closeNav()">Updates</a>
+  <a href="contact.html" onclick="closeNav()">Contact</a>
+  <a href="reports.html">Annual reports</a>
+  <a href="give.html" style="color:var(--gold);font-weight:700;">Give</a>
+</div>
+
+<main id="main">
+<div class="page-head compact">
+  <div class="wrap">
+    <div class="eyebrow">Modelling the fund</div>
+    <h1>An illustration, not a forecast</h1>
+    <p>This page lets you see how a permanent endowment behaves arithmetically over time. It is a
+    teaching tool for the model, not a prediction of what this fund will do.</p>
+  </div>
+</div>
+
+<div class="section-wide">
+  <div class="wrap">
+    <h2>The assumptions</h2>
+    <div class="gold-divider"></div>
+    <table class="detail-table">
+      <tr><th scope="row">Nominal return</th><td>6.5% a year by default, being the real return target of CPI plus 4% net of all fees at 2.5% inflation, which the Investment Policy Statement assesses over rolling five-year periods. Adjustable from 3% to 12%.</td></tr>
+      <tr><th scope="row">Distribution rate</th><td>5.5% a year by default, applied to the average corpus at the three preceding financial year ends rather than the latest balance. The Investment Policy Statement sets 5.5% where new gifts over the three preceding years have averaged at least 2.0% of that corpus, and 4.0% in any other case. In the fund’s first three years the preceding year end is used instead of a three-year average. The directors determine the applicable rate by resolution each year. Adjustable from 1% to 10%.</td></tr>
+      <tr><th scope="row">New contributions</th><td>A$10,000 a year by default, indexed to inflation. Set this to zero to see the fund on its existing capital alone.</td></tr>
+      <tr><th scope="row">Inflation</th><td>2.5% a year, used both to index contributions and to show figures in today's dollars.</td></tr>
+      <tr><th scope="row">Not modelled</th><td>Market volatility, sequence of returns, fees, tax, currency movement, and the board's discretion to reinvest instead of distributing. Real outcomes will differ, in both directions.</td></tr>
+      <tr><th scope="row">Currency</th><td>LKR figures use an approximate rate of 238 LKR per AUD, which will change.</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- THE MODEL -->
+<div class="parchment-section" id="model">
+  <div class="wrap">
+    <h2>The model</h2>
+    <div class="gold-divider"></div>
+    <p>Use the year slider to see the fund at any point in its life, then adjust the assumptions to
+    test different scenarios.</p>
+
+    <div class="proj-header-stats">
+      <div style="background:var(--heritage);border-radius:8px;padding:20px 18px;">
+        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(212,168,83,0.5);margin-bottom:6px;" id="spotYearLbl">In year 1</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--gold);line-height:1;margin-bottom:4px;" id="spotDist">A$2,750</div>
+        <div style="font-size:11px;color:rgba(212,168,83,0.5);">distributed to Sri Lanka</div>
+        <div style="font-size:13px;color:rgba(212,168,83,0.7);margin-top:6px;" id="spotLKR">&#8776; LKR 654,500</div>
+      </div>
+      <div style="background:var(--heritage);border-radius:8px;padding:20px 18px;">
+        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(212,168,83,0.5);margin-bottom:6px;" id="spotYearLbl2">Fund size at year 1</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--gold);line-height:1;margin-bottom:4px;" id="spotFund">A$61,750</div>
+        <div style="font-size:11px;color:rgba(212,168,83,0.5);">corpus value</div>
+        <div style="font-size:13px;color:rgba(212,168,83,0.7);margin-top:6px;" id="spotFundReal">in today's dollars</div>
+      </div>
+      <div style="background:var(--heritage);border-radius:8px;padding:20px 18px;">
+        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(212,168,83,0.5);margin-bottom:6px;">Total distributed so far</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--gold);line-height:1;margin-bottom:4px;" id="spotCumDist">A$2,750</div>
+        <div style="font-size:11px;color:rgba(212,168,83,0.5);" id="spotCumLKR">&#8776; LKR 654,500 total</div>
+      </div>
+    </div>
+
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:24px;margin-bottom:20px;">
+      <div id="chartFallback" class="small muted" style="display:none;padding:28px 0;text-align:center;">
+        The chart could not be loaded. The figures in the panels above are calculated in your browser
+        and remain accurate.
+      </div>
+      <canvas id="projChart" height="85" aria-label="Modelled fund size and annual distribution over 25 years"></canvas>
+    </div>
+
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:24px;">
+      <div style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--forest);margin-bottom:20px;">Adjust assumptions</div>
+      <div class="sliders-grid">
+        <div style="grid-column:span 2;background:rgba(212,168,83,0.06);border:1px solid rgba(212,168,83,0.2);border-radius:6px;padding:16px 20px;">
+          <label for="slYear" style="font-size:13px;font-weight:600;color:var(--heritage);display:flex;justify-content:space-between;margin-bottom:8px;">Viewing year <span style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold-dk);" id="lblYear">Year 1</span></label>
+          <input type="range" id="slYear" min="1" max="25" step="1" value="1" oninput="projUpdate()" style="width:100%;accent-color:var(--gold);">
+          <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-top:4px;">
+            <span>Year 1</span><span>Year 5</span><span>Year 10</span><span>Year 15</span><span>Year 20</span><span>Year 25</span>
+          </div>
+        </div>
+        <div>
+          <label for="slStart" style="font-size:12px;color:var(--forest);display:flex;justify-content:space-between;margin-bottom:6px;">Starting corpus <span style="color:var(--gold-dk);font-weight:600;" id="lblStart">A$50k</span></label>
+          <input type="range" id="slStart" min="5" max="200" step="5" value="50" oninput="projUpdate()" style="width:100%;accent-color:var(--gold);">
+          <div style="font-size:11px;color:var(--muted);margin-top:3px;">Founding corpus target</div>
+        </div>
+        <div>
+          <label for="slAdd" style="font-size:12px;color:var(--forest);display:flex;justify-content:space-between;margin-bottom:6px;">Annual contributions <span style="color:var(--gold-dk);font-weight:600;" id="lblAdd">A$10k</span></label>
+          <input type="range" id="slAdd" min="0" max="20" step="1" value="10" oninput="projUpdate()" style="width:100%;accent-color:var(--gold);">
+          <div style="font-size:11px;color:var(--muted);margin-top:3px;">New contributions per year, indexed to inflation</div>
+        </div>
+        <div>
+          <label for="slRate" style="font-size:12px;color:var(--forest);display:flex;justify-content:space-between;margin-bottom:6px;">Return assumption <span style="color:var(--gold-dk);font-weight:600;" id="lblRate">6.5%</span></label>
+          <input type="range" id="slRate" min="3" max="12" step="0.5" value="6.5" oninput="projUpdate()" style="width:100%;accent-color:var(--gold);">
+          <div style="font-size:11px;color:var(--muted);margin-top:3px;">Target: CPI + 4%, or 6.5% at 2.5% inflation</div>
+        </div>
+        <div>
+          <label for="slDist" style="font-size:12px;color:var(--forest);display:flex;justify-content:space-between;margin-bottom:6px;">Distribution rate <span style="color:var(--gold-dk);font-weight:600;" id="lblDist">5.5%</span></label>
+          <input type="range" id="slDist" min="1" max="10" step="0.5" value="5.5" oninput="projUpdate()" style="width:100%;accent-color:var(--gold);">
+          <div style="font-size:11px;color:var(--muted);margin-top:3px;">Applied to a rolling three-year average corpus</div>
+        </div>
+      </div>
+    </div>
+    <p class="small muted" style="font-style:italic;margin-top:16px;">Figures shown are nominal unless
+    labelled otherwise. Returns are not guaranteed.</p>
+  </div>
+</div>
+
+<!-- IMPACT CALCULATOR -->
+<div class="section-wide" id="impact">
+  <div class="wrap">
+    <h2>What a distribution buys</h2>
+    <div class="gold-divider"></div>
+    <p>The figures below apply the distribution rate you have set to a contribution of your choosing, at
+    current Sri Lankan retail prices.</p>
+
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:6px;padding:20px 24px;margin-bottom:28px;">
+      <label for="ic_slider" style="font-size:17px;font-weight:500;color:var(--heritage);display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">I contribute <span style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--gold-dk);" id="ic_val">A$2,500</span></label>
+      <input type="range" id="ic_slider" min="500" max="10000" step="500" value="2500" oninput="icUpdate()" style="width:100%;accent-color:var(--gold);">
+    </div>
+
+    <div class="two-col" style="margin-top:0;align-items:start;">
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="border-left:3px solid var(--gold);background:var(--white);padding:18px 20px;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--heritage);margin-bottom:4px;" id="ic_lkr">LKR 327,250 / year</div>
+          <div style="font-size:11px;color:var(--muted);">could reach Sri Lanka each year, indefinitely</div>
+        </div>
+        <div style="border-left:3px solid var(--gold);background:var(--white);padding:18px 20px;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--heritage);margin-bottom:4px;" id="ic_lkr25">LKR 8,181,250</div>
+          <div style="font-size:11px;color:var(--muted);">total over 25 years on the same assumptions</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold-dk);margin-bottom:14px;">An annual distribution of that size buys approximately</div>
+        <div class="ic-grid">
+          <div style="background:var(--white);border:1px solid var(--border);border-top:2px solid var(--gold);padding:20px 12px;text-align:center;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--heritage);line-height:1;margin-bottom:6px;" id="ic_bags">32</div>
+            <div style="font-size:12px;font-weight:600;color:var(--forest);margin-bottom:3px;">school bags</div>
+            <div style="font-size:10px;color:var(--muted);">avg LKR 1,000 each</div>
+          </div>
+          <div style="background:var(--white);border:1px solid var(--border);border-top:2px solid var(--gold);padding:20px 12px;text-align:center;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--heritage);line-height:1;margin-bottom:6px;" id="ic_shoes">12</div>
+            <div style="font-size:12px;font-weight:600;color:var(--forest);margin-bottom:3px;">pairs of shoes</div>
+            <div style="font-size:10px;color:var(--muted);">avg LKR 2,550 each</div>
+          </div>
+          <div style="background:var(--white);border:1px solid var(--border);border-top:2px solid var(--gold);padding:20px 12px;text-align:center;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--heritage);line-height:1;margin-bottom:6px;" id="ic_books">109</div>
+            <div style="font-size:12px;font-weight:600;color:var(--forest);margin-bottom:3px;">activity books</div>
+            <div style="font-size:10px;color:var(--muted);">avg LKR 300 each</div>
+          </div>
+        </div>
+        <p class="small muted" style="font-style:italic;">Based on Sri Lankan retail prices, at
+        approximately 238 LKR per AUD. Illustrative only.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <div class="wrap-narrow">
+    <h2>Beyond the numbers</h2>
+    <div class="gold-divider"></div>
+    <p>The model works because the constitution prevents the capital being spent and requires the
+    directors to document every distribution decision.</p>
+    <a class="btn" href="governance.html">How the fund is governed</a>
+    <a class="btn btn-outline" href="give.html" style="margin-left:8px;">Ways to give</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+(function() {
+  const LKR = 238;
+  const labels25 = Array.from({length:25}, (_,i) => 'Yr '+(i+1));
+  let projChart = null;
+  const CPI = 0.025;
+
+  function buildProjData(startK, rate, dist, addK) {
+    const d = []; let f = startK * 1000; const prior = [startK * 1000];
+    for (let y = 1; y <= 25; y++) {
+      const base = prior.slice(-3).reduce((a,b)=>a+b,0) / Math.min(prior.length,3);
+      const distribution = base * dist;
+      const interest = f * rate;
+      const contrib = addK * 1000 * Math.pow(1 + CPI, y - 1);
+      f = f + interest - distribution + contrib;
+      prior.push(f);
+      const defl = Math.pow(1 + CPI, y);
+      d.push({ fund: Math.round(f), fundReal: Math.round(f / defl), dist: Math.round(distribution) });
+    }
+    return d;
+  }
+
+  function fmt(v) { return 'A$' + Math.round(v).toLocaleString(); }
+  function fmtLKR(v) {
+    const lkr = Math.round(v * LKR);
+    return lkr >= 1000000 ? '\u2248 LKR ' + (lkr/1000000).toFixed(2) + 'M' : '\u2248 LKR ' + lkr.toLocaleString();
+  }
+
+  if (typeof Chart === 'undefined') {
+    var fb = document.getElementById('chartFallback');
+    var cv = document.getElementById('projChart');
+    if (fb) fb.style.display = 'block';
+    if (cv) cv.style.display = 'none';
+  }
+
+  window.projUpdate = function() {
+    const startK = parseFloat(document.getElementById('slStart').value);
+    const rate   = parseFloat(document.getElementById('slRate').value) / 100;
+    const dist   = parseFloat(document.getElementById('slDist').value) / 100;
+    const addK   = parseFloat(document.getElementById('slAdd').value);
+    const year   = parseInt(document.getElementById('slYear').value);
+
+    document.getElementById('lblStart').textContent = 'A$'+startK+'k';
+    document.getElementById('lblRate').textContent  = (rate*100).toFixed(1)+'%';
+    document.getElementById('lblDist').textContent  = (dist*100).toFixed(1)+'%';
+    document.getElementById('lblAdd').textContent   = addK===0?'A$0':'A$'+addK+'k';
+    document.getElementById('lblYear').textContent  = 'Year '+year;
+
+    const data = buildProjData(startK, rate, dist, addK);
+    const yr = data[year-1];
+    const cumDist = data.slice(0, year).reduce((s,d)=>s+d.dist, 0);
+
+    document.getElementById('spotYearLbl').textContent  = 'In year ' + year;
+    document.getElementById('spotYearLbl2').textContent = 'Fund size at year ' + year;
+    document.getElementById('spotDist').textContent     = fmt(yr.dist);
+    document.getElementById('spotLKR').textContent      = fmtLKR(yr.dist);
+    document.getElementById('spotFund').textContent     = fmt(yr.fund);
+    document.getElementById('spotFundReal').textContent = fmt(yr.fundReal) + " in today's dollars";
+    document.getElementById('spotCumDist').textContent  = fmt(cumDist);
+    document.getElementById('spotCumLKR').textContent   = fmtLKR(cumDist) + ' total';
+
+    const scatterData = labels25.map((l,i) => i===year-1 ? {x:l, y:data[i].fund} : null).filter(Boolean);
+
+    if (typeof Chart === 'undefined') return;
+    if (projChart) {
+      projChart.data.datasets[0].data = data.map(d=>d.fund);
+      projChart.data.datasets[1].data = data.map(d=>d.dist);
+      projChart.data.datasets[2].data = scatterData;
+      projChart.update();
+    } else {
+      projChart = new Chart(document.getElementById('projChart'), {
+        data: {
+          labels: labels25,
+          datasets: [
+            { type:'line', label:'Fund size', data:data.map(d=>d.fund), borderColor:'#183A2C', backgroundColor:'transparent', borderWidth:2.5, pointRadius:0, yAxisID:'yF', tension:0.35 },
+            { type:'bar', label:'Annual distribution', data:data.map(d=>d.dist), backgroundColor:'rgba(212,168,83,0.5)', borderColor:'#D4A853', borderWidth:1, yAxisID:'yD', borderRadius:2 },
+            { type:'scatter', label:'Selected year', data:scatterData, backgroundColor:'#D4A853', pointRadius:7, pointHoverRadius:9, yAxisID:'yF', showLine:false }
+          ]
+        },
+        options: {
+          responsive:true, interaction:{mode:'index',intersect:false},
+          plugins:{ legend:{position:'top',labels:{font:{family:'DM Sans',size:11}}}, tooltip:{callbacks:{label:ctx=>' '+ctx.dataset.label+': A$'+Math.round(ctx.parsed.y).toLocaleString()}} },
+          scales:{
+            yF:{type:'linear',position:'left',ticks:{callback:v=>'A$'+v.toLocaleString(),font:{family:'DM Sans',size:10}},grid:{color:'rgba(0,0,0,0.04)'}},
+            yD:{type:'linear',position:'right',ticks:{callback:v=>'A$'+v.toLocaleString(),font:{family:'DM Sans',size:10}},grid:{drawOnChartArea:false}},
+            x:{ticks:{font:{family:'DM Sans',size:9}},grid:{color:'rgba(0,0,0,0.03)'}}
+          }
+        }
+      });
+    }
+  };
+  projUpdate();
+})();
+
+(function(){
+  const LKR=238, DIST=0.055, BAG=1000, SHOE=2550, BOOK=300;
+  function fL(v){ return v>=1000000 ? 'LKR '+(v/1000000).toFixed(2)+'M' : 'LKR '+v.toLocaleString(); }
+  window.icUpdate=function(){
+    const v=parseInt(document.getElementById('ic_slider').value);
+    const ann=Math.round(v*DIST), annLKR=Math.round(ann*LKR);
+    document.getElementById('ic_val').textContent='A$'+v.toLocaleString();
+    document.getElementById('ic_lkr').textContent=fL(annLKR)+' / year';
+    document.getElementById('ic_lkr25').textContent=fL(Math.round(ann*25*LKR));
+    document.getElementById('ic_bags').textContent=Math.floor(annLKR/BAG);
+    document.getElementById('ic_shoes').textContent=Math.floor(annLKR/SHOE);
+    document.getElementById('ic_books').textContent=Math.floor(annLKR/BOOK);
+  };
+  icUpdate();
+})();
+</script>
+
+</main>
+
+<footer>
+<div class="acknowledgement">
+  <div class="wrap">
+    <p>The Serendib Endowment acknowledges the Turrbal and Jagera peoples, the Traditional Owners of
+    Meanjin (Brisbane), the land on which we work, and their custodianship of these lands and waters
+    over tens of thousands of years. As an organisation dedicated to supporting and uplifting our
+    community, we draw inspiration from this long tradition of mutual care and stewardship. We pay our
+    deepest respects to Elders past, present and emerging, and extend that respect to all Aboriginal
+    and Torres Strait Islander peoples with us today.</p>
+  </div>
+</div>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>The Serendib Endowment</h4>
+      <p>A permanent charitable endowment supporting communities in Sri Lanka through education,
+      relief of hardship, and emergency response.</p>
+      <p style="margin-top:14px;">
+        PO Box 154, Carina QLD 4152<br>
+        <a href="tel:+611300787184" style="display:inline;padding:0;">1300 787 184</a><br>
+        <a href="mailto:info@serendibendowment.org" style="display:inline;padding:0;">info@serendibendowment.org</a>
+      </p>
+      <p style="margin-top:12px;">Give once. Give forever.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Understand</h4>
+      <a href="on-a-page.html">The fund on a page</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="what-we-fund.html">What we fund</a>
+      <a href="our-work.html">Our work</a>
+      <a href="faq.html">Frequently asked questions</a>
+      <a href="projections.html">Modelling the fund</a>
+    </div>
+    <div class="footer-col">
+      <h4>Accountability</h4>
+      <a href="governance.html">Governance and board</a>
+      <a href="constitution.html">Constitution</a>
+      <a href="reports.html">Annual reports</a>
+      <a href="updates.html">Updates and statements</a>
+      <a href="contact.html#complaints">Complaints</a>
+    </div>
+    <div class="footer-col">
+      <h4>Give</h4>
+      <a href="give.html">Ways to give</a>
+      <a href="give.html#commitments">Founding contributors</a>
+      <a href="contact.html">Talk to us</a>
+    </div>
+  </div>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/serendibendowment/" rel="noopener" aria-label="The Serendib Endowment on Instagram">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"></circle>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/company/the-serendib-endowment" rel="noopener" aria-label="The Serendib Endowment on LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.51C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.74C24 .78 23.2 0 22.22 0z"></path>
+      </svg>
+    </a>
+  </div>
+  <div class="footer-legal">
+    The Serendib Endowment Ltd &nbsp;&middot;&nbsp; ABN 73 698 867 408 &nbsp;&middot;&nbsp; ACN 698 867 408
+    &nbsp;&middot;&nbsp; A public company limited by guarantee<br>
+    A not-for-profit company. Its income and assets may only be applied to its charitable purposes.<br>
+    <a href="privacy.html" style="display:inline;padding:0;color:rgba(255,255,255,0.45);">Privacy</a>
+
+    &nbsp;&middot;&nbsp;
+    <a href="contact.html#complaints" style="display:inline;padding:0;color:rgba(255,255,255,0.45);">Complaints</a>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
