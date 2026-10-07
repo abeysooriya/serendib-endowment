@@ -4,6 +4,17 @@ Static site. No build step, no framework, nothing to install. Plain HTML, one CS
 file, one JS file. Every path is relative, so it works identically whether you open
 it from a folder on your desktop or serve it from a domain.
 
+## Figures that change: edit in one place
+
+**Founding fund totals** live in `FUND` at the top of `build.py`: committed, target and
+contributors. The percentage is calculated. They are injected into the home page and the
+give page as tokens, so a new contribution means editing one dict and running build.py,
+not hunting through two pages for four numbers.
+
+**Director and adviser names** live only on `governance.html`. The one-pager and the media
+facts table link there rather than repeating the list, so an appointment or resignation is
+a single edit.
+
 ## Files
 
 ```

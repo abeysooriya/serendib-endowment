@@ -1200,6 +1200,7 @@ footer { background: var(--forest); color: rgba(255,255,255,0.5); padding: 48px 
 .op-cta p { font-size: 14px; color: var(--muted); }
 .op-cta .op-note { border-top: none; max-width: none; margin: 0; }
 
+.op-roster-note { margin-top: 16px !important; font-size: 14.5px; }
 .op-roster { margin-top: 18px; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 26px; }
 @media(max-width:680px) { .op-roster { grid-template-columns: 1fr; gap: 16px; } }
 .op-roster .l {
@@ -1231,13 +1232,13 @@ footer { background: var(--forest); color: rgba(255,255,255,0.5); padding: 48px 
   .op-mark svg { height: 20px; }
 
   .op-body { padding: 0 !important; }
-  .op-step { padding: 1px 0; }
+  .op-step { padding: 0; }
   .op-n { position: static; width: auto; text-align: left; margin-bottom: 2px; }
   .op-step h2 { font-size: 10.5pt; margin-bottom: 3px; }
   .op-step p { margin-bottom: 2px; }
   .op-step p { font-size: 7.7pt !important; line-height: 1.3; margin-bottom: 3px; color: #333 !important; }
   .op-n { font-size: 13pt; }
-  .op-note { font-size: 7.3pt !important; padding-top: 4px; margin-top: 1px; line-height: 1.3; }
+  .op-note { font-size: 7.2pt !important; padding-top: 3px; margin-top: 0; line-height: 1.28; }
 
   .op-facts { margin-top: 5px; padding: 5px 0; gap: 10px; }
   .op-facts .v { font-size: 10pt; }
@@ -1260,9 +1261,10 @@ footer { background: var(--forest); color: rgba(255,255,255,0.5); padding: 48px 
   .op-three strong { font-size: 10.5pt; margin-bottom: 2px; }
   .op-three p { font-size: 7.6pt !important; line-height: 1.3; }
 
-  .op-roster { margin: 6px 0 3px; gap: 16px; }
+  .op-roster { margin: 5px 0 2px; gap: 14px; }
+  .op-roster-note { margin-top: 5px !important; font-size: 7.7pt !important; }
   .op-roster .l { font-size: 6.5pt; margin-bottom: 1px; }
-  .op-roster span.v { font-size: 7.8pt; line-height: 1.35; }
+  .op-roster span.v { font-size: 7.6pt; line-height: 1.3; }
 
 
   .op-meter { padding: 12px 14px; margin-top: 9px; background: #F5F2EA !important; }
