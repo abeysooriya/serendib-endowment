@@ -810,6 +810,14 @@ a { color: var(--gold-dk); }
   max-width: none; margin: 0;
   font-size: 13.5px; line-height: 1.85; color: rgba(255,255,255,0.6);
 }
+/* The Aboriginal and Torres Strait Islander flags, in protocol order.
+   A faint border keeps the black edge of each flag from dissolving into
+   the forest-green footer behind it. */
+.ack-flags { display: flex; gap: 12px; margin: 0 0 20px; }
+.ack-flags img {
+  display: block; width: auto; height: 34px; border-radius: 2px;
+  box-shadow: 0 0 0 1.5px rgba(255,255,255,0.45);
+}
 
 /* ── FOOTER ────────────────────────────────────────── */
 footer { background: var(--forest); color: rgba(255,255,255,0.5); padding: 48px 40px 32px; }
